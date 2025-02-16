@@ -7,9 +7,3 @@
       apt:
         upgrade: "yes"
         update_cache: true
-
-- name: Send a message to the Discord channel
-  community.general.discord:
-    webhook_id: "1340833644578734080"
-    webhook_token: "kOqXMNDrgzi-5W5rE_p2BdLUYxmColVyVtqOHXfTjagsxNaoxGcq0vaVdCUjNnfdgGZ7"
-    content: "Update Done"
