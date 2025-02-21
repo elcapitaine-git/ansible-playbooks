@@ -7,12 +7,13 @@
       apt:
         upgrade: "yes"
         update_cache: true 
+
     - name : Get Hostname 
       shell: echo $HOSTNAME
-      register: hostname
+      register: pve_hostname
 
     - name : Send a message to the Discord Channel
       community.general.discord:
         webhook_id: "{{ discord_channel_id }}"
         webhook_token: "{{ discord_channel_token }}"
-        content: Update Proxmox Done "{{ hostname }}"
+        content: Update Proxmox Done "{{ pve_hostname }}"
