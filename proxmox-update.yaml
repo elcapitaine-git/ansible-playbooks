@@ -11,4 +11,4 @@
   community.general.discord:
     webhook_id: "{{ discord_channel_id }}"
     webhook_token: "{{ discord_channel_token }}"
-    content: "This is a message from ansible"
+    content: "Update Proxmox Done"
