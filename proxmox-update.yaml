@@ -6,9 +6,9 @@
       apt:
         upgrade: "yes"
         update_cache: true
-
-- name: Send a message to the Discord Channel
-  community.general.discord:
-    webhook_id: "{{ discord_channel_id }}"
-    webhook_token: "{{ discord_channel_token }}"
-    content: "Update Proxmox Done"
+  tasks: 
+    - name: Send a message to the Discord Channel
+      community.general.discord:
+      webhook_id: "{{ discord_channel_id }}"
+      webhook_token: "{{ discord_channel_token }}"
+      content: "Update Proxmox Done"
