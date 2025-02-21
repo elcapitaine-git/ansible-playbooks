@@ -15,6 +15,4 @@
       community.general.discord:
         webhook_id: "{{ discord_channel_id }}"
         webhook_token: "{{ discord_channel_token }}"
-        embeds:
-        - title: hostname
-          content: "Update Proxmox Done"
+        content: hostname "Update Proxmox Done"
